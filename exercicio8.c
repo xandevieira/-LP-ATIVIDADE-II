@@ -1,29 +1,28 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <string.h>
 
 int main() {
+
+    setlocale(LC_ALL, "portuguese");
+    
     int numero;
 
-    printf("Digite um número inteiro positivo: ");
+    printf("Digite um número: ");
     scanf("%d", &numero);
 
-    if (numero <= 0) {
-        printf("Por favor, digite um número inteiro positivo.\n");
-        return 1;
-    }
-
-    printf("Contagem regressiva a partir de %d:\n", numero);
-
     while (numero >= 0) {
-        switch (numero) {
+            switch (numero) {
             case 0:
-                printf("Zero\n");
-                break;
+                printf("Fim");
+            break;
             default:
-                printf("%d\n", numero);
-                break;
+                printf ("%d\n", numero);
+            break;
+            }
+        numero = numero - 1;    
         }
-        numero--;
-    }
 
     return 0;
 }
