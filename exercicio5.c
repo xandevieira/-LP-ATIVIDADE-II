@@ -13,13 +13,13 @@ int main()
     printf ("1 - Inglês, 2 - Espanhol, 3 - Francês \n");
     scanf ("%d", &idioma);
 
-    if (idioma = 1) {
+    if (idioma == 1) {
         printf ("Welcome!");
     }
-    else if (idioma = 2) {
+    else if (idioma == 2) {
         printf ("Bienvenido!");
     }
-    else if (idioma = 3) {
+    else if (idioma == 3) {
         printf ("Accueillir!");
     }
 
